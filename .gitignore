@@ -1,0 +1,7 @@
+﻿/packages/
+.vs/
+x64/
+*.user
+/bin/
+/*.exe
+tests.exe
