@@ -5,7 +5,7 @@ import wt "../.."
 import "core:fmt"
 import "core:mem"
 import "core:os"
-import "core:runtime"
+import "base:runtime"
 
 write_callback :: proc "c" (env: rawptr, caller: wt.wasmtime_caller, pargs: wt.wasmtime_val, nargs: wt.size_t, results: wt.wasmtime_val, nresults: wt.size_t) -> wt.wasm_trap {
 	context = runtime.default_context()
