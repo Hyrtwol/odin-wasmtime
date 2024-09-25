@@ -1,4 +1,4 @@
-// +vet
+#+vet
 package main
 
 import wt "../.."

@@ -1,4 +1,4 @@
-// +vet
+#+vet
 package wasmtime
 
 when #config(WASMTIME_MIN, false) {
