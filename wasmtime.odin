@@ -271,7 +271,7 @@ wasmtime_extern :: ^wasmtime_extern_t
 
 wasmtime_externref :: distinct rawptr
 
-wasmtime_val_t :: struct {
+wasmtime_val_t :: struct #max_field_align(8) {
 	kind: wasm_valkind_enum, //u8,
 	of:   wasmtime_valunion_t,
 }

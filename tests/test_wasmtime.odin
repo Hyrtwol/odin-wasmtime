@@ -24,6 +24,7 @@ expect_value_64 :: proc(t: ^testing.T, #any_int act: u64, #any_int exp: u64, loc
 @(test)
 size_up :: proc(t: ^testing.T) {
 	testing.expect(t, size_of(wt.size_t) == size_of(uint))
+	expect_size(t, wt.wasm_valkind_enum, 1)
 }
 
 main :: proc() {
